@@ -1,26 +1,28 @@
-.is-muted{
-  color: $grey-light !important;
-}
-
-a.is-muted:hover{
-  color: $grey !important;
-}
-
-
-
-
 /* ========================================
-   =========== Dropdown Override ==========
+   ============ Text Overrides ===========
    ======================================== */
 
-// Bulma doesn't come with a dropdown, so I have to take
-// matters into my own hands. This creates a dropdown menu
-.dropdown {
+   .is-muted {
+    color: $grey-light !important;
+  }
+  
+  a.is-muted:hover{
+    color: $grey !important;
+  }
+  
+  /* ========================================
+     =========== Dropdown Override ==========
+     ======================================== */
+  
+  // Bulma doesn't come with a dropdown, so I have to take
+  // matters into my own hands. This creates a dropdown menu
+  .dropdown {
     position: relative;
   }
   
   .dropdown-menu {
     box-shadow: 0 0 8px #777;
+    background-color: white;
     display: none;
     left: 0;
     position: absolute;
@@ -110,4 +112,3 @@ a.is-muted:hover{
   .nav {
     height: 4.5rem;
   }
-

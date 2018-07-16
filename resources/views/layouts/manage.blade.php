@@ -8,22 +8,20 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Webİmzam - Yönetim Paneli</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('styles')
 </head>
 <body>
-
     @include('_includes.nav.main')
-
-    <div id="app">
-      @yield('content')
+    @include('_includes.nav.manage')
+  <div id="app">
+        @yield('content')
     </div>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
-    @yield('scripts')
 </body>
 </html>
