@@ -16767,8 +16767,9 @@ button.nav-item.is-active {
 }
 
 .side-menu {
-  position: fixed;
-  height: 100vh;
+  position: absolute;
+  top: 4rem;
+  bottom: 0;
   width: 200px;
   background-color: white;
   overflow-y: scroll;
@@ -16777,12 +16778,11 @@ button.nav-item.is-active {
 .management-area {
   position: absolute;
   top: 4rem;
-  padding: 20px;
   left: 200px;
   right: 0;
 }
 
 .flex-container {
-  margin: 20px 35px;
+  margin: 10px 25px;
 }
 

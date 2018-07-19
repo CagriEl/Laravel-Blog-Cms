@@ -8,7 +8,9 @@
                 
             </div>
             <div class="column">
-                <a href="{{route('users.create')}}" class="button is-primary"><i class="fa fa-user-add m-r-10"></i>Kullanıcı Oluştur</a>
+                <a href="{{route('users.create')}}" class="button is-primary">
+                    <i class="fa fa-user-add m-r-10"></i>Kullanıcı Oluştur
+                </a>
             </div>
         </div>
         <hr class="m-t-0">
@@ -48,7 +50,7 @@
                 </table>
             </div>
         </div>
-        {{$users->links()}}
+
     </div>
 
 
