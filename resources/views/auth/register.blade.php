@@ -6,12 +6,12 @@
     <div class="column is-one-third is-offset-one-third m-t-100">
       <div class="card">
         <div class="card-content">
-          <h1 class="title">Topluluğa Kayıt Ol!</h1>
+          <h1 class="title">Join The Community</h1>
 
           <form action="{{route('register')}}" method="POST" role="form">
             {{csrf_field()}}
             <div class="field">
-              <label for="name" class="label">İsim</label>
+              <label for="name" class="label">Name</label>
               <p class="control">
                 <input class="input {{$errors->has('name') ? 'is-danger' : ''}}" type="text" name="name" id="name" value="{{old('name')}}" required>
               </p>
@@ -20,7 +20,7 @@
               @endif
             </div>
             <div class="field">
-              <label for="email" class="label">E-Posta Adresi</label>
+              <label for="email" class="label">Email Address</label>
               <p class="control">
                 <input class="input {{$errors->has('email') ? 'is-danger' : ''}}" type="text" name="email" id="email" value="{{old('email')}}" required>
               </p>
@@ -31,7 +31,7 @@
             <div class="columns">
               <div class="column">
                 <div class="field">
-                  <label for="password" class="label">Parola</label>
+                  <label for="password" class="label">Password</label>
                   <p class="control">
                     <input class="input {{$errors->has('password') ? 'is-danger' : ''}}" type="password" name="password" id="password" required>
                   </p>
@@ -43,7 +43,7 @@
 
               <div class="column">
                 <div class="field">
-                  <label for="password_confirmation" class="label">Parolanızı Tekrar Giriniz</label>
+                  <label for="password_confirmation" class="label">Confirm Password</label>
                   <p class="control">
                     <input class="input {{$errors->has('password_confirmation') ? 'is-danger' : ''}}" type="password" name="password_confirmation" id="password_confirmation" required>
                   </p>
@@ -54,11 +54,11 @@
               </div>
             </div>
 
-            <button class="button is-success is-outlined is-fullwidth m-t-30">Kayıt Ol</button>
+            <button class="button is-success is-outlined is-fullwidth m-t-30">Register</button>
           </form>
         </div> <!-- end of .card-content -->
       </div> <!-- end of .card -->
-      <h5 class="has-text-centered m-t-20"><a href="{{route('login')}}" class="is-muted">Şifremi Unuttum!</a></h5>
+      <h5 class="has-text-centered m-t-20"><a href="{{route('login')}}" class="is-muted">Already have an Account?</a></h5>
     </div>
   </div>
 

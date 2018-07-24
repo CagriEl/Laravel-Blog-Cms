@@ -8,20 +8,24 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Webİmzam - Yönetim Paneli</title>
+    <title>DevMarketer - MANAGEMENT</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @yield('styles')
 </head>
 <body>
+
     @include('_includes.nav.main')
+
     @include('_includes.nav.manage')
-  <div class="management-area" id="app">
-        @yield('content')
+
+    <div class="management-area" id="app">
+      @yield('content')
     </div>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    @yield('scripts')
 </body>
 </html>

@@ -84,7 +84,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Webimzam
+                    DevMarketer.io
                 </div>
             </div>
         </div>
