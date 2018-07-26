@@ -1,10 +1,15 @@
-.side-menu {
+#admin-side-menu {
   position: absolute;
   top: 4rem;
   bottom: 0;
+  left: -200px ;
   width: 200px;
   background-color: white;
   overflow-y: scroll;
+
+  @include desktop{
+    left: 0;
+  } 
 }
 
 .management-area {
