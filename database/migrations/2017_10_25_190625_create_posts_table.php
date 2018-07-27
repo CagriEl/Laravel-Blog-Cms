@@ -16,18 +16,19 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
             $table->string('slug')->unique();
-            $table->integar('author_id')->unsigned();
+            $table->unsignedInteger('author_id');
             $table->string('title');
             $table->text('excerpt');
             $table->longText('content');
-            $table->integer('status');
-            $table->integer('type')->unsigned()->default(1);
-            $table->timestamps()->unsigned()->default(1);
-            $table->bigInteger('commet_count')->unsigned();
+            $table->integer('status')->default(1);
+            $table->unsignedInteger('type')->default(1);
+            $table->unsignedBigInteger('comment_count')->default(0);
             $table->dateTime('published_at');
-            $table->foregin('author_id')
-            ->references('id')->on('users')
-            ->onDelete('cascade');
+            $table->timestamps();
+
+            $table->foreign('author_id')
+                  ->references('id')->on('users')
+                  ->onDelete('cascade');
         });
     }
 

@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "dev-marketer",
-  "description": "Webimzam Advanced Blog/CMS",
+  "description": "DevMarketer video tutorial series Building an Advanced Blog/CMS",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
@@ -16,12 +16,13 @@
   "devDependencies": {
     "axios": "^0.16.2",
     "buefy": "^0.5.3",
-    "bulma": "^0.5.3",
+    "bulma": "^0.5.4",
     "cross-env": "^5.0.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.1.1",
-    "laravel-mix": "^1.0",
+    "laravel-mix": "^1.5",
     "lodash": "^4.17.4",
-    "vue": "^2.1.10"
+    "slug": "^0.9.1",
+    "vue": "^2.5.2"
   }
 }

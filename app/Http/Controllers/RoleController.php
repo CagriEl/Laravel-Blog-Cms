@@ -39,9 +39,9 @@ class RoleController extends Controller
      */
     public function store(Request $request)
     {
-      $this->validate($request, [
+      $this->validateWith([
         'display_name' => 'required|max:255',
-        'name' => 'required|max:100|alpha_dash|unique:role,name',
+        'name' => 'required|max:100|alpha_dash|unique:roles',
         'description' => 'sometimes|max:255'
       ]);
 
@@ -93,7 +93,7 @@ class RoleController extends Controller
      */
     public function update(Request $request, $id)
     {
-      $this->validate($request, [
+      $this->validateWith([
         'display_name' => 'required|max:255',
         'description' => 'sometimes|max:255'
       ]);
