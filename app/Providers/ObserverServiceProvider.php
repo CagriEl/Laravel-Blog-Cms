@@ -6,7 +6,6 @@ use App\User;
 use App\Observers\UserObserver;
 use Illuminate\Support\ServiceProvider;
 
-
 class ObserverServiceProvider extends ServiceProvider
 {
     /**
@@ -16,7 +15,7 @@ class ObserverServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        User::observe(UserObserver::class);
+      User::observe(UserObserver::class);
     }
 
     /**

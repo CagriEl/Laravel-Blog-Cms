@@ -166,7 +166,6 @@ return [
         /*
          * Package Service Providers...
          */
-        Laravel\Tinker\TinkerServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -177,15 +176,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\ObserverServiceProvider::class,
-
-
-        /*
-         * Third Party Service Providers...
-         */
-        Laratrust\LaratrustServiceProvider::class,
-        DevMarketer\EasyNav\EasyNavServiceProvider::class,
-
-
 
     ],
 
@@ -234,7 +224,9 @@ return [
         'Session' => Illuminate\Support\Facades\Session::class,
         'Storage' => Illuminate\Support\Facades\Storage::class,
         'URL' => Illuminate\Support\Facades\URL::class,
-        'Nav' => DevMarketer\EasyNav\EasyNavFacade::class,
+        'Validator' => Illuminate\Support\Facades\Validator::class,
+        'View' => Illuminate\Support\Facades\View::class,
+        'Gravatar' => Thomaswelton\LaravelGravatar\Facades\Gravatar::class
 
 
     ],

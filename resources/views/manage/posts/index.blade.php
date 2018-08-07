@@ -10,7 +10,7 @@
         <a href="{{route('posts.create')}}" class="button is-primary is-pulled-right"><i class="fa fa-user-plus m-r-10"></i> Create New Post</a>
       </div>
     </div>
-    <hr class="m-t-0">
+  <hr class="m-t-0">
 
 
 

@@ -7,10 +7,11 @@ use App\Post;
 
 class PostController extends Controller
 {
-
-  public function __contruct(){
+  public function __construct()
+  {
     $this->middleware('role:superadministrator|administrator|editor|author|contributor');
   }
+
   /**
    * Display a listing of the resource.
    *
@@ -87,8 +88,8 @@ class PostController extends Controller
       //
   }
 
-  public function apiCheckUnique(Request $request){
-
-    return json_encode(!Post::where('slug','=', $request->slug)->exists());
+  public function apiCheckUnique(Request $request)
+  {
+    return json_encode(!Post::where('slug', '=', $request->slug)->exists());
   }
 }
